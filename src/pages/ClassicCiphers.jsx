@@ -15,6 +15,23 @@ const ClassicCiphers = () => {
   const [k2, setK2] = useState(0);
   const [affineEncrypt, setAffineEncrypt] = useState(true);
 
+  // Helper function to check if k1 is coprime with 26
+  const checkSetK1 = (value) => {
+    if (gcd(value, 26) === 1) {
+      setK1(value);
+    } else {
+      if(value > k1)
+        checkSetK1(value + 1);
+      else
+        checkSetK1(value - 1);
+    }
+  }
+
+  // Helper function to find the greatest common divisor of two numbers
+  const gcd = (a, b) => {
+    return b ? gcd(b, a % b) : a;
+  }
+
   // State for Vigenere cipher
   const [vigenereKey, setVigenereKey] = useState("");
   const [vigenereEncrypt, setVigenereEncrypt] = useState(true);
@@ -92,7 +109,7 @@ const ClassicCiphers = () => {
             <input
               type="number"
               value={k1}
-              onChange={(e) => setK1(Number(e.target.value))}
+              onChange={(e) => checkSetK1(Number(e.target.value))}
               min="1"
               max="25"
               style={{ margin: "0 10px" }}
