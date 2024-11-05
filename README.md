@@ -9,13 +9,13 @@ The Cryptography and Cryptanalysis App is a web-based application designed to ed
 The primary purpose of this repository is to serve as a learning platform for individuals interested in the fields of cryptography and cryptanalysis. By using this app, users can:
 
 - Understand the basics of cryptographic concepts.
-- Learn how to encrypt and decrypt messages using a Caesar cipher.
+- Learn how to encrypt and decrypt messages using diffrent cipher methods.
 - Explore the history and significance of cryptography in society.
 - Test their knowledge through quizzes and interactive features.
 
 ## Features
 
-- **Caesar Cipher Tool**: Encrypt and decrypt messages using the Caesar cipher method.
+- **Cipher Tools**: Encrypt and decrypt messages using the various cipher method.
 - **Informative Content**: Learn about various cryptographic algorithms and their historical context.
 - **User Interaction**: Participate in quizzes to test your knowledge on cryptography.
 - **Responsive Design**: A user-friendly interface that works well on both desktop and mobile devices.
