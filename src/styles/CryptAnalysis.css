@@ -1,0 +1,108 @@
+/* cryptanalysis.css */
+
+/* General Styles */
+.cryptAnalysis {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cryptAnalysis  h2 {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .cryptAnalysis p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .cryptAnalysis label {
+    font-size: 1.1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .cryptAnalysis textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .cryptAnalysis textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .cryptAnalysis button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .cryptAnalysis button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cryptAnalysis button:active {
+    background-color: #004085;
+  }
+  
+  /* Chart Section */
+  .cryptAnalysis div > .chart-container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .cryptAnalysis h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    textarea {
+      font-size: 0.95rem;
+    }
+  
+    button {
+      font-size: 1rem;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+  

@@ -1,16 +1,17 @@
 function FrequencyAnalysis(text) {
-    let freq = new Map();
-
+    let freq = {};
     for (let i = 0; i < text.length; i++) {
-        let char = text[i];
-        if (freq.has(char)) {
-            freq.set(char, freq.get(char) + 1);
+      let char = text[i].toLowerCase(); // Convert all characters to lowercase
+      if (char.match(/[a-zA-Z]/)) {  // Only consider alphabetic characters
+        if (char in freq) {
+          freq[char]++;
         } else {
-            freq.set(char, 1);
+          freq[char] = 1;
         }
+      }
     }
-
     return freq;
-};
-
-export default FrequencyAnalysis;
+  }
+  
+  export default FrequencyAnalysis;
+  
